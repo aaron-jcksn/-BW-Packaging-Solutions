@@ -9,13 +9,48 @@ $(document).ready(function(){
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
     });
     
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        items:4,
-        loop:true,
-        margin:10,
-        autoplay:true,
-        autoplayTimeout:1000,
-        autoplayHoverPause:true
-    });
+     $(".owl-carousel").owlCarousel({
+         autoPlay : true,
+         items : 8,
+        itemsCustom : false,
+        itemsDesktop : [1199,4],
+        itemsDesktopSmall : [980,4],
+        itemsTablet: [768,4],
+        itemsTabletSmall: false,
+        itemsMobile : [479,2],
+        singleItem : false,
+        itemsScaleUp : false,
+ 
+        //Basic Speeds
+        slideSpeed : 200,
+        paginationSpeed : 800,
+        rewindSpeed : 1000,
+
+        //Autoplay
+        stopOnHover : true
+     });
+//    var owl = $("#owl-demo");
+// 
+//      owl.owlCarousel({
+//          items : 8,
+//        itemsCustom : true,
+//        itemsDesktop : [1199,4],
+//        itemsDesktopSmall : [980,3],
+//        itemsTablet: [768,2],
+//        itemsTabletSmall: false,
+//        itemsMobile : [479,1],
+//        singleItem : false,
+//        itemsScaleUp : false,
+// 
+//        //Basic Speeds
+//        slideSpeed : 200,
+//        paginationSpeed : 800,
+//        rewindSpeed : 1000,
+//
+//        //Autoplay
+//        autoPlay : true,
+//        stopOnHover : true
+//          
+//       });
+   
 });
