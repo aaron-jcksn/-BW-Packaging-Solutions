@@ -511,10 +511,11 @@ input[type=submit]:hover {
     z-index: 8;
 }
 .mega-dropdown-menu > li > ul {
-*/
+
   padding: 0;
   margin: 0;
 }
+*/
 .mega-dropdown-menu > li > ul > li {
   list-style: none;
 }
@@ -560,6 +561,38 @@ input[type=submit]:hover {
 
 .mobile_logos {
     background: #EFEFF0;
+}
+
+/******************* Mobile Nav *************************/
+
+.mobile_navbar {
+    z-index: 5;
+    background-color: #6a757e;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li.mobile_list {
+    padding: 5px 10px;
+}
+
+.navbar-default .navbar-nav>li.mobile_list>a {
+    width: 100%;
+    float: none;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.mobile_nav {
+    margin: 0;
+}
+
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover {
+    background-color: #63CBCE;
+    border: 0px solid #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
 }
 
 /******************* Slider Styles **********************/
