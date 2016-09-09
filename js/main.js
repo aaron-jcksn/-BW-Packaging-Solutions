@@ -29,28 +29,22 @@ $(document).ready(function(){
         //Autoplay
         stopOnHover : true
      });
-//    var owl = $("#owl-demo");
-// 
-//      owl.owlCarousel({
-//          items : 8,
-//        itemsCustom : true,
-//        itemsDesktop : [1199,4],
-//        itemsDesktopSmall : [980,3],
-//        itemsTablet: [768,2],
-//        itemsTabletSmall: false,
-//        itemsMobile : [479,1],
-//        singleItem : false,
-//        itemsScaleUp : false,
-// 
-//        //Basic Speeds
-//        slideSpeed : 200,
-//        paginationSpeed : 800,
-//        rewindSpeed : 1000,
-//
-//        //Autoplay
-//        autoPlay : true,
-//        stopOnHover : true
-//          
-//       });
+
+    var $toggleButton = $('.toggle-button'),
+    	$menuWrap = $('.menu-wrap'),
+    	$sidebarArrow = $('.sidebar-menu-arrow');
+
+	// Hamburger button
+
+	$toggleButton.on('click', function() {
+		$(this).toggleClass('button-open');
+		$menuWrap.toggleClass('menu-show');
+	});
+
+	// Sidebar navigation arrows
+
+	$sidebarArrow.click(function() {
+		$(this).next().slideToggle(300);
+	});
    
 });
